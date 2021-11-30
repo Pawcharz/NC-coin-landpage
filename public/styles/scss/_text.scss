@@ -1,10 +1,43 @@
-$font-main: 'Chivo', sans-serif;
 body {
     font-size: 16px;
     font-family: $font-main;
 
     color: rgba(white, 0.85);
+
+    @media (max-width: 1200px) {
+        font-size: 15px;
+    }
+    @media (max-width: 800px) {
+        font-size: 13px;
+    }
+    @media (max-width: 600px) {
+        font-size: 11.5px;
+    }
+    @media (max-width: 400px) {
+        font-size: 10px;
+    }
 }
+
+.container-text {
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+
+    .header {
+        margin-left: 0;
+    }
+    .content {
+        text-align: justify;
+    }
+}
+.header {
+    margin-left: 0;
+    font-size: 3em;
+    font-weight: 600;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     margin: auto;
@@ -39,7 +72,7 @@ a {
 .list-disabled {
     list-style: none;
     padding: 0;
-    margin: auto;
+    margin: auto auto auto 0;
 
     display: flex;
     align-items: center;
@@ -51,4 +84,13 @@ a {
 
         display: flex;
     }
+}
+
+.text-neon-azure {
+    color: $color-azure;
+    text-shadow: 0 0 0.75rem rgba($color-azure, 0.125);
+}
+.text-neon-yellow {
+    color: $color-yellow;
+    text-shadow: 0 0 0.75rem rgba($color-yellow, 0.125);
 }

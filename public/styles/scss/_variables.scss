@@ -1,0 +1,12 @@
+
+
+$font-main: 'Chivo', sans-serif;
+
+
+$color-black-background: #0f0f0f;
+$color-azure: #4cd6d2; //3bbbb4
+$color-yellow: #e2e05c; //3bbbb4
+
+@mixin shadow-text-white-l {
+    text-shadow: 0 0 0.75rem rgba(white, 0.125);
+}
