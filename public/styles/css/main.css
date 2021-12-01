@@ -53,6 +53,13 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,6 +101,13 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,6 +152,13 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,6 +210,13 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
   min-width: 50%;
   margin: auto;
   -webkit-box-pack: justify;
@@ -217,6 +245,13 @@ body {
   grid-row: 4 / 5;
   height: 30rem;
   width: 100%;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
   border: 0.25rem solid black;
   border-radius: 2rem;
   background-color: rgba(255, 255, 255, 0.005);
@@ -286,6 +321,57 @@ body {
   }
 }
 
+.banner.hidden .banner-main .upper {
+  -webkit-transform: translateY(-8em);
+          transform: translateY(-8em);
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner.hidden .banner-main .quotes {
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner.hidden .banner-main .container-statistics {
+  -webkit-transform: translateX(10em);
+          transform: translateX(10em);
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner.hidden .banner-main .container-buttons {
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner.hidden .banner-main .container-graph {
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .about-coin {
   width: 100%;
   min-height: calc(70vh - 12em);
@@ -328,6 +414,13 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .about-coin-main .container-links {
@@ -337,11 +430,18 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -391,6 +491,13 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,6 +617,39 @@ body {
   }
 }
 
+.about-coin.hidden .about-coin-main .container-text {
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-coin.hidden .about-coin-main .container-links {
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-coin.hidden .about-coin-main .container-discord {
+  -webkit-transform: translateX(10em);
+          transform: translateX(10em);
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .faq {
   width: 100%;
   min-height: calc(60vh - 12em);
@@ -548,11 +688,28 @@ body {
   gap: 2rem;
 }
 
+.faq-main .header {
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 .faq-main .faq-list {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -572,6 +729,28 @@ body {
         grid-template-columns: 1fr;
     grid-gap: 0.5rem;
   }
+}
+
+.faq.hidden .faq-main .header {
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.faq.hidden .faq-main .faq-list {
+  -webkit-transform: translateY(-10em);
+          transform: translateY(-10em);
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .faq-card {
@@ -624,6 +803,10 @@ body {
 .faq-card .up img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.faq-card .up .question {
+  margin-left: 0;
 }
 
 .faq-card .answer {
@@ -692,6 +875,45 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.about-community-main .container-buttons-outter {
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.about-community.hidden .about-community-main .container-text {
+  -webkit-transform: translateY(-10em);
+          transform: translateY(-10em);
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-community.hidden .about-community-main .container-buttons-outter {
+  -webkit-transform: translateY(4em);
+          transform: translateY(4em);
+  opacity: 0;
+  max-width: 0vw;
+  max-height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 body {

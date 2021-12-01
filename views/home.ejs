@@ -15,7 +15,7 @@
 
 <body>
 
-    <section class="banner">
+    <section class="banner hidden">
         <%- include('./partials/navbar.ejs') %>
 
             <main class="banner-main">
@@ -108,7 +108,7 @@
 
     </section>
 
-    <section class="about-coin">
+    <section class="about-coin hidden">
 
         <main class="about-coin-main">
 
@@ -174,7 +174,7 @@
 
     </section>
 
-    <section class="faq">
+    <section class="faq hidden">
 
         <main class="faq-main">
             <h1 class="header">FAQ</h1>
@@ -296,7 +296,7 @@
 
     </section>
 
-    <section class="about-community">
+    <section class="about-community hidden">
 
         <main class="about-community-main">
 
@@ -331,6 +331,7 @@
     
 </body>
 
+<script src="./scripts/sectionDisplayer.js"></script>
 <script src="./scripts/faq.js"></script>
 
 </html>
